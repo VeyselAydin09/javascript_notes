@@ -121,18 +121,18 @@ console.log("****** CONDITIONS *******");
 
 // let gelir = +prompt("gelir miktarini giriniz");
 // let gider = +prompt("gider miktarini giriniz");
-// let sonuc = (gelir>=gider+5500) ? "kredi verilebilir" : "kredi verilemez"
-// console.log(`${sonuc}`)
+// let sonuc = gelir >= gider + 5500 ? "kredi verilebilir" : "kredi verilemez";
+// console.log(`${sonuc}`);
 
-// const gelir = +prompt("gelir miktarini giriniz");
-// const gider = +prompt("gider miktarini giriniz");
+let gelir = +prompt("gelir miktarini giriniz");
+let gider = +prompt("gider miktarini giriniz");
 
-// if (gelir>=gider+5500){
-//     console.log("kredi verilebilir")
-// }
-// if (gelir<gider+5500){
-//     console.log("kredi Verilemez")
-// }
+if (gelir >= gider + 5500) {
+  console.log("kredi verilebilir");
+}
+if (gelir < gider + 5500) {
+  console.log("kredi Verilemez");
+}
 
 // let sum = 0;
 // let number = 0;
