@@ -35,3 +35,41 @@ console.log(veri);
 
 //* Diziden Veri Okuma-Yazma (indisleme)
 //* ---------------------------------------------------------
+//* Diziden Veri Okuma-Yazma (indisleme)
+//* ---------------------------------------------------------
+//!  Diziden veri okuma
+console.log(diller[1]);
+const go = diller[3];
+console.log(go);
+
+console.log(isimler[isimler.length - 1]);
+//? at()
+console.log(isimler.at(-1));
+
+//!  Diziye veri yazma
+// const isimler = ["ahmet", "ismet", "can", "canan", "Matheww"];
+isimler[1] = "saffet";
+console.log(isimler);
+
+//!Uncaught TypeError: Assignment to constant variable.
+// isimler = ["Ali", "Veli"];
+
+//? numbers dizisinin son elementinin degerini bir arttirin
+console.log(numbers);
+numbers[numbers.length - 1]++;
+console.log(numbers);
+
+const yaslar = [22, 44, 55];
+const kisiler = ["Ahmet", "Can", 2022, 2022 - 1990, true, yaslar];
+
+console.log(kisiler);
+
+//? kisiler icerisindeki yaslar dizisinde bulunan 55 yasini konsola yazdiriniz.
+
+const yas55 = kisiler[5][2];
+console.log(yas55);
+
+//? kisiler icerisindeki yaslar dizisinde bulunan 44 yasini bir eksiltiniz.
+kisiler[5][1]--; //?43
+console.log(kisiler);
+console.log(yaslar);
