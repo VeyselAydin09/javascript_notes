@@ -83,3 +83,55 @@ const products = [
 //?For Capitilize
 products.map((p, i, arr) => (arr[i] = p[0].toUpperCase() + p.slice(1)));
 console.log(products);
+
+//* ======================================================
+//*                CHAINING (PIPELINE)
+//* ======================================================
+
+//* ======================================================
+//*                 FILTER METHOD
+//* ======================================================
+const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+
+//?-------------- ÖRNEK -------------------
+//? Maasi 10000'den buyuk olanlari ayri bir diziye saklayalim
+
+const bigThan = salaries.filter((s) => s > 10000);
+console.log(bigThan, salaries);
+
+const range = salaries.filter((s) => s >= 6000 && s <= 10000);
+console.log(range);
+
+//?-------------- ÖRNEK -------------------
+//? Maasi 9000'den az olanlara %10 zam yaparak bu degerleri
+//? yeni diziye saklayalim.
+
+const lessThan9000Increase = salaries
+  .filter((s) => s < 9000)
+  .map((s) => Math.trunc(s * 1.1));
+
+console.log(lessThan9000Increase);
+
+salaries
+  .filter((s) => s < 9000)
+  .map((s) => Math.trunc(s * 1.1))
+  .forEach((s) => console.log(s));
+//* ======================================================
+//*                 REDUCE METHOD
+//* ======================================================
+// const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+
+const sumOfSalaries = salaries.reduce((acc, val, i) => acc + val, 0);
+
+console.log("SUM:", sumOfSalaries);
+
+//? Ornek: Bir Firma, 9000 TL den az olan maaşlara %10 zam yapmak istiyor
+//? ve zam yapılan bu kişilere toplam kaç TL ödeneceğini bilmek istiyor.
+//? İlgili programı yazınız.
+
+const sumOfRaisedSalaries = salaries
+  .filter((sal) => sal <= 9000)
+  .map((sal) => Math.trunc(sal * 1.1))
+  .reduce((acc, salary) => acc + salary, 0);
+
+console.log("Sum Of Raised Salaries:", sumOfRaisedSalaries);
