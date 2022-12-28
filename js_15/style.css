@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  color: black;
+  border: 2px solid black;
+  background-color: bisque;
+}
+
+.secret-number {
+  font-size: 2rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 250px;
+}
+
+.secret-number,
+.guess-input,
+.btn {
+  font-size: 1.6rem;
+}
