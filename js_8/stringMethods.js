@@ -213,12 +213,12 @@
 // console.log(ramazan.trim());
 // console.log(ramazan.trim().length); //27
 
-// //! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
+// //! ODEV1: hakan string'indeki kelimelerin sayisini donduren
 // //! bir fonksiyon yaziniz.
 
-let tarkan = "Gel gunduzle gece olalim";
+let hakan = "Karam askin sevgin bu mu";
 
-const yeniTarkan = () => {
-  return tarkan.split(" ");
+const yeniHakan = () => {
+  return hakan.split(" ");
 };
-console.log(yeniTarkan());
+console.log(yeniHakan());
