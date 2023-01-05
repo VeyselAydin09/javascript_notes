@@ -112,32 +112,40 @@ console.log(arabalar);
 // // * ======================================================
 
 // //? nested
-// const people = {
-//   person1: {
-//     name: "Can",
-//     surname: "Canan",
-//     dob: "1990",
-//     job: "developer",
-//     salary: "140000",
-//     drivingLicense: true,
-//   },
-//   person2: {
-//     name: "John",
-//     surname: "Sweet",
-//     dob: "1990",
-//     job: "tester",
-//     salary: "110000",
-//     drivingLicense: false,
-//   },
-//   person3: {
-//     name: "Steve",
-//     surname: "Job",
-//     dob: "2000",
-//     job: "developer",
-//     salary: "90000",
-//     drivingLicense: true,
-//   },
-// };
+const people = {
+  person1: {
+    name: "Can",
+    surname: "Canan",
+    dob: "1990",
+    job: "developer",
+    salary: "140000",
+    drivingLicense: true,
+  },
+  person2: {
+    name: "John",
+    surname: "Sweet",
+    dob: "1990",
+    job: "tester",
+    salary: "110000",
+    drivingLicense: false,
+  },
+  person3: {
+    name: "Steve",
+    surname: "Job",
+    dob: "2000",
+    job: "developer",
+    salary: "90000",
+    drivingLicense: true,
+  },
+  person4: {
+    name: "Alice",
+    surname: "quin",
+    dob: "1995",
+    job: "developer",
+    salary: "99000",
+    drivingLicense: true,
+  },
+};
 
 // console.log(people); //? {person1: {…}, person2: {…}}
 // console.log("Salary of P2:", people.person2.salary);
