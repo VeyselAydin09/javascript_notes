@@ -10,26 +10,22 @@ console.log("**** FUNC DECLARATION ******");
 
 //* ORNEK:
 //************************************************/
-yazdir();
+// yazdir();
 
 //! Fonksiyonun tanimlanmasi (declaration)
-function yazdir() {
-  console.log("merhaba");
-}
+// function yazdir() {
+//   console.log("merhaba");
+// }
 
 // yazdir(); //! invoke, call, cagirma
 // yazdir();
 //* ORNEK2:
 //*************************************************/
 
-// function selamla(ad, soyAd = "") {
-//   console.log(`Merhaba ${ad} ${soyAd}`);
-// }
-
-// selamla("Can", "Yilmaz");
-// selamla("Canan", "Ozturk");
-// selamla("Ayse");
-// selamla("John");
+function selamla(ad, soyAd = "") {
+  console.log(`Merhaba ${ad} ${soyAd}`);
+}
+selamla("hakan", "tugut");
 
 //! Bir parametreyi cagirma sirasinda kullanmaz isek onun
 //! yerine default parametre atayabiliriz. Ornekteki lastName
