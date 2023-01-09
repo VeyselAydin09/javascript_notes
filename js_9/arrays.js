@@ -224,3 +224,26 @@ while (ayy > 13 || beyy <= 2) {
   ayy++;
   beyy += 2;
 }
+
+//-----------------------------------------------------------
+
+let dailyActivities = ["eat", "sleep"];
+
+// this will add the new element 'exercise' at the 2 index
+dailyActivities[2] = "exercise";
+
+console.log(dailyActivities); // ['eat', 'sleep', 'exercise']
+
+//______________________________________________________________
+let dailyActivities = ["work", "eat", "sleep", "exercise"];
+
+// remove the last element
+dailyActivities.pop();
+console.log(dailyActivities); // ['work', 'eat', 'sleep']
+
+// remove the last element from ['work', 'eat', 'sleep']
+const removedElement = dailyActivities.pop();
+
+//get removed element
+console.log(removedElement); // 'sleep'
+console.log(dailyActivities); // ['work', 'eat']
