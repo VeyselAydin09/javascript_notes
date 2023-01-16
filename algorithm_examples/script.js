@@ -119,3 +119,13 @@ while (u <= 7550) {
 }
 alert(u);
 alert(g);
+
+/--------------------------------question-8----------------------------/;
+
+// Günlük 1150 şişe süt üreten bir tesisin 24 günlük kümülatif süt üretimini alt alta ekrana yazdıran Javascript kodunu yazınız.
+
+ts = 0;
+for (s = 1; s <= 24; s = s + 1) {
+  ts = ts + 1150;
+  document.write(ts + "<br>");
+}
