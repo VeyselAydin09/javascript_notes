@@ -84,3 +84,16 @@ const findStudents = (arr, search) => {
 
 const name = +prompt("Please enter a name").toLowerCase();
 console.log(findStudents(students, name));
+
+/--------------------------------question-5----------------------------/;
+
+//Bir yatırımın sabit maliyeti $500.000 ve değişken maliyetleri ise yıllık $14.000 olarak hesaplanmıştır. Yatırımın ekonomik ömrü 17 yıl ve 17 yıl sonunda yatırımdan elde edilecek toplam gelir $1.700.000 olduğuna göre Yatırımın kar zarar miktarını hesaplayan Javascript kodunu yazınız.
+
+m = 500000;
+k = 0;
+for (y = 1; y <= 17; y = y + 1) {
+  m = m + 14000;
+}
+k = 1700000 - m;
+
+console.log("k");
