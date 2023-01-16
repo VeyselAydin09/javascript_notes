@@ -97,3 +97,13 @@ for (y = 1; y <= 17; y = y + 1) {
 k = 1700000 - m;
 
 console.log("k");
+
+/--------------------------------question-6----------------------------/;
+
+// 10 ile 15 sayıları arasındaki tamsayıların çarpımını hesaplayıp ekrana yazdıran Javacsript kodunu yazınız.
+
+c = 1;
+for (s = 10; s <= 15; s = s + 1) {
+  c = c * s;
+}
+console.log("c");
