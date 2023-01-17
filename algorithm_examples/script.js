@@ -89,24 +89,47 @@
 
 // bir metin yaziniz. metin karekterlerinin string ise display yapiniz eger string degilse donguden cikiniz
 
-let karakterUzunlugu, metin;
-metin = prompt("Akliniza ilk geleni yaziniz.");
-console.log(metin);
-karakterUzunlugu = metin.length;
+// let karakterUzunlugu, metin;
+// metin = prompt("Akliniza ilk geleni yaziniz.");
+// console.log(metin);
+// karakterUzunlugu = metin.length;
 
-for (let i = 0; i < karakterUzunlugu; i++) {
-  let karakter = metin[i];
-  console.log(`${metin[i]} indekslenen karakter.`);
-  if (isNaN(metin[i])) {
-    console.log(`${metin[i]} bu karekter string bir degerdir.`);
-  } else {
-    console.log(`${metin[i]} bu karekter number bir degerdir.`);
-    break;
-  }
-}
+// for (let i = 0; i < karakterUzunlugu; i++) {
+//   let karakter = metin[i];
+//   console.log(`${metin[i]} indekslenen karakter.`);
+//   if (isNaN(metin[i])) {
+//     console.log(`${metin[i]} bu karekter string bir degerdir.`);
+//   } else {
+//     console.log(`${metin[i]} bu karekter number bir degerdir.`);
+//   }
+// }
 
 /--------------------------------question-6----------------------------/;
 
-/--------------------------------question-7----------------------------/;
+// girilen sayilarin ortalamasi cift olana kadar sayi istenen bir dongu yaziniz
+
+let sayi, total, counter, avg;
+total = 0;
+counter = 0;
+avg = 1;
+
+while (avg % 2 != 0) {
+  sayi = prompt("Bir sayi giriniz:");
+  if (isNaN != false) {
+    console.log(`Girilen sayi ${sayi} dir. Sayi kabul edildi.`);
+    counter += 1;
+
+    if (counter > 1) {
+      total += Number(sayi);
+      avg = Math.round(total / counter);
+      console.log(avg);
+    }
+  } else {
+    console.log("Girilen  deger kabul edilmedi.");
+  }
+}
+console.log(`sayilarin ortalamasi ${avg} dir.`);
+
+//--------------------------------question-7----------------------------/;
 
 //--------------------------------question-8----------------------------/;
