@@ -2,16 +2,16 @@
 
 // The most common minimum age to vote is 18. Write a function canIVote() that takes in a number, rerpresnting the person's age, and returns the boolean true if they are 18 years old or older, and the boolean false if they are not.
 
-function oyVerebilirmiyim(yas) {
-  if (yas > 18) {
-    console.log("kisi askere gidebilir.");
-  } else if (yas === 18) {
-    console.log("kisi askere belki gidebilir.");
-  } else {
-    console.log("kisi askere gidemez.");
-  }
-}
-oyVerebilirmiyim(14);
+// function oyVerebilirmiyim(yas) {
+//   if (yas > 18) {
+//     console.log("kisi askere gidebilir.");
+//   } else if (yas === 18) {
+//     console.log("kisi askere belki gidebilir.");
+//   } else {
+//     console.log("kisi askere gidemez.");
+//   }
+// }
+// oyVerebilirmiyim(14);
 
 // if (mehmetinYasi >= 18) {
 //   console.log("Mehmet askere gidebilir.");
@@ -31,31 +31,31 @@ oyVerebilirmiyim(14);
 //  65-140 should return 'senior citizen'
 //  if the number is less than 0 or greater than 140, the program should return 'This is not a valid age'
 
-let elaAge = 66;
+// let elaAge = 66;
 
-if (3 <= elaAge) {
-  console.log("baby");
-} else if (12 >= elaAge) {
-  console.log("child");
-} else if (19 >= elaAge) {
-  console.log("teen");
-} else if (64 >= elaAge) {
-  console.log("adult");
-} else if (140 >= elaAge) {
-  console.log("senior citizen");
-}
+// if (3 <= elaAge) {
+//   console.log("baby");
+// } else if (12 >= elaAge) {
+//   console.log("child");
+// } else if (19 >= elaAge) {
+//   console.log("teen");
+// } else if (64 >= elaAge) {
+//   console.log("adult");
+// } else if (140 >= elaAge) {
+//   console.log("senior citizen");
+// }
 
 /--------------------------------question-3----------------------------/;
 
-let prices = [1, 2, 3, 4, 5, 6];
+// let prices = [1, 2, 3, 4, 5, 6];
 
-let profit = 0;
+// let profit = 0;
 
-for (let i = 1; i < prices.length; i++) {
-  prices[i] > prices[i - 1];
-  profit += prices[i] - prices[i - 1];
-}
-console.log(profit);
+// for (let i = 1; i < prices.length; i++) {
+//   prices[i] > prices[i - 1];
+//   profit += prices[i] - prices[i - 1];
+// }
+// console.log(profit);
 
 /--------------------------------question-4----------------------------/;
 
@@ -66,66 +66,47 @@ console.log(profit);
 //* fonksiyon "ogrenci bulunamadi" dondurulmelidir.
 //*--------------------------------------------------------
 
-const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
+// const students = ["ahmet", "mehmet", "ismet", "ahmet", "can", "mehmet", "cem"];
 
-const findStudents = (arr, search) => {
-  let counter = 0;
-  for (let i in arr) {
-    if (search === arr[i]) {
-      counter++;
-    }
-  }
-  if (!counter) {
-    return `${search} can not be found`;
-  } else {
-    return `${search} found ${counter} times`;
-  }
-};
+// const findStudents = (arr, search) => {
+//   let counter = 0;
+//   for (let i in arr) {
+//     if (search === arr[i]) {
+//       counter++;
+//     }
+//   }
+//   if (!counter) {
+//     return `${search} can not be found`;
+//   } else {
+//     return `${search} found ${counter} times`;
+//   }
+// };
 
-const name = +prompt("Please enter a name").toLowerCase();
-console.log(findStudents(students, name));
+// const name = +prompt("Please enter a name").toLowerCase();
+// console.log(findStudents(students, name));
 
 /--------------------------------question-5----------------------------/;
 
-//Bir yatırımın sabit maliyeti $500.000 ve değişken maliyetleri ise yıllık $14.000 olarak hesaplanmıştır. Yatırımın ekonomik ömrü 17 yıl ve 17 yıl sonunda yatırımdan elde edilecek toplam gelir $1.700.000 olduğuna göre Yatırımın kar zarar miktarını hesaplayan Javascript kodunu yazınız.
+// bir metin yaziniz. metin karekterlerinin string ise display yapiniz eger string degilse donguden cikiniz
 
-m = 500000;
-k = 0;
-for (y = 1; y <= 17; y = y + 1) {
-  m = m + 14000;
+let karakterUzunlugu, metin;
+metin = prompt("Akliniza ilk geleni yaziniz.");
+console.log(metin);
+karakterUzunlugu = metin.length;
+
+for (let i = 0; i < karakterUzunlugu; i++) {
+  let karakter = metin[i];
+  console.log(`${metin[i]} indekslenen karakter.`);
+  if (isNaN(metin[i])) {
+    console.log(`${metin[i]} bu karekter string bir degerdir.`);
+  } else {
+    console.log(`${metin[i]} bu karekter number bir degerdir.`);
+    break;
+  }
 }
-k = 1700000 - m;
-
-console.log("k");
 
 /--------------------------------question-6----------------------------/;
 
-// 10 ile 15 sayıları arasındaki tamsayıların çarpımını hesaplayıp ekrana yazdıran Javacsript kodunu yazınız.
-
-c = 1;
-for (s = 10; s <= 15; s = s + 1) {
-  c = c * s;
-}
-console.log("c");
-
 /--------------------------------question-7----------------------------/;
-// Günlük 210 ton yağ rafine etme ve işleme kapasitesine sahip bir fabrikanın 7550 tonluk üretimi karşılamak için kaç gün çalışması gerektiğini ve çalışma sonucu kaç ton zeytinyağı üretileceğini hesaplayan Javascript kodunu yazınız.
 
-g = 0;
-u = 0;
-while (u <= 7550) {
-  u = u + 210;
-  g = g + 1;
-}
-alert(u);
-alert(g);
-
-/--------------------------------question-8----------------------------/;
-
-// Günlük 1150 şişe süt üreten bir tesisin 24 günlük kümülatif süt üretimini alt alta ekrana yazdıran Javascript kodunu yazınız.
-
-ts = 0;
-for (s = 1; s <= 24; s = s + 1) {
-  ts = ts + 1150;
-  document.write(ts + "<br>");
-}
+//--------------------------------question-8----------------------------/;
