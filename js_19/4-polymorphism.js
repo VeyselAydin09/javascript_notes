@@ -75,7 +75,6 @@ console.log(mag1);
 // function x(string a, string b) {
 //   return a + b;
 // }
-
 // //? overloading
 // function x(integer a, integer b) {
 //   return a + b;
