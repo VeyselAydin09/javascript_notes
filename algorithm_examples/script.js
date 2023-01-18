@@ -108,39 +108,63 @@
 
 // girilen sayilarin ortalamasi cift olana kadar sayi istenen bir dongu yaziniz
 
-let sayi, total, counter, avg;
-total = 0;
-counter = 0;
-avg = 1;
+// let sayi, total, counter, avg;
+// total = 0;
+// counter = 0;
+// avg = 1;
 
-while (avg % 2 != 0) {
-  sayi = prompt("Bir sayi giriniz:");
-  if (isNaN != false) {
-    console.log(`Girilen sayi ${sayi} dir. Sayi kabul edildi.`);
-    counter += 1;
+// while (avg % 2 != 0) {
+//   sayi = prompt("Bir sayi giriniz:");
+//   if (isNaN != false) {
+//     console.log(`Girilen sayi ${sayi} dir. Sayi kabul edildi.`);
+//     counter += 1;
 
-    if (counter > 1) {
-      total += Number(sayi);
-      avg = Math.round(total / counter);
-      console.log(avg);
-    }
-  } else {
-    console.log("Girilen  deger kabul edilmedi.");
-  }
-}
-console.log(`sayilarin ortalamasi ${avg} dir.`);
+//     if (counter > 1) {
+//       total += Number(sayi);
+//       avg = Math.round(total / counter);
+//       console.log(avg);
+//     }
+//   } else {
+//     console.log("Girilen  deger kabul edilmedi.");
+//   }
+// }
+// console.log(`sayilarin ortalamasi ${avg} dir.`);
 
-//--------------------------------question-7----------------------------/;
+/--------------------------------question-7----------------------------/;
 
 // carpim tablosunu yazdiriniz
 
-for (let x = 1; x <= 10; x++) {
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${x} X ${i} = ${x * i}`);
-    if (i === 10) {
-      console.log("-----------------");
+// for (let x = 1; x <= 10; x++) {
+//   for (let i = 1; i <= 10; i++) {
+//     console.log(`${x} X ${i} = ${x * i}`);
+//     if (i === 10) {
+//       console.log("-----------------");
+//     }
+//   }
+// }
+
+/ --------------------------------question-8----------------------------/;
+//ogrencinin ogretmenin girdigi notlara bakabildigi kod sistemini yaziniz
+let isimler = "";
+let menu = prompt("1 - ogretmen menu\n2 - ogrenci menu ");
+
+if (menu == "1") {
+  let sayacIsim = Number(prompt("kac ogrenci verisi gireceksiniz? :"));
+  for (let i = 1; i <= sayacIsim; i++) {
+    let sayacNot = Number(prompt(`${i}. ogrenci kac adet not gireceksiniz`));
+    let isim = prompt("ogrenci ismini giriniz :");
+    let toplam = 0;
+    let ort = 0;
+    for (let i = 1; i <= sayacNot; i++) {
+      let not = Number(prompt(`${isim} icin ${i}. notunu giriniz`));
+      toplam += not;
     }
+    ort = toplam / sayacNot;
+    isimler += isim + ort + "   ";
   }
+  console.log(isimler);
 }
 
-//--------------------------------question-8----------------------------/;
+// --------------------------------question-9----------------------------/;
+// --------------------------------question-10----------------------------/;
+// --------------------------------question-11----------------------------/;
