@@ -201,5 +201,12 @@ function isPalindrom(str) {
 }
 
 console.log(isPalindrom("91019"));
-// --------------------------------question-10----------------------------/;
+/ --------------------------------question-10----------------------------/;
+
+//  which  count  century
+let year = +prompt("lutfen tarih giriniz.");
+whichCentury = (year) => {
+  return Math.ceil(year / 100);
+};
+console.log(`${whichCentury(year)}. yuzyil`);
 // --------------------------------question-11----------------------------/;
