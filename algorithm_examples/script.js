@@ -182,55 +182,55 @@
 
 //  check  palindrom
 
-function isPalindrom(string) {
-  console.log(string.split("").join());
-  console.log(string.split("").reverse().join());
-  if (string.split("").join() == string.split("").reverse().join()) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isPalindrom(string) {
+//   console.log(string.split("").join());
+//   console.log(string.split("").reverse().join());
+//   if (string.split("").join() == string.split("").reverse().join()) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(isPalindrom("radar"));
+// console.log(isPalindrom("radar"));
 
-// --------soution2----------
+// // --------soution2----------
 
-function isPalindrom(str) {
-  return str.split("").reverse().join("") === str;
-}
+// function isPalindrom(str) {
+//   return str.split("").reverse().join("") === str;
+// }
 
-console.log(isPalindrom("91019"));
-/ --------------------------------question-10----------------------------/;
+// console.log(isPalindrom("91019"));
+// / --------------------------------question-10----------------------------/;
 
-//  which  count  century
-let year = +prompt("lutfen tarih giriniz.");
-whichCentury = (year) => {
-  return Math.ceil(year / 100);
-};
-console.log(`${whichCentury(year)}. yuzyil`);
+// //  which  count  century
+// let year = +prompt("lutfen tarih giriniz.");
+// whichCentury = (year) => {
+//   return Math.ceil(year / 100);
+// };
+// console.log(`${whichCentury(year)}. yuzyil`);
 / --------------------------------question-11----------------------------/;
 // verilen dizide art arda tekrar eden iki sayi duplicate
 // ikinci degeri en kucuk indexte bulunan ikiliyi dondur
-["2", 1, "3", "5", "3", "2", "5"];
+// ["2", 1, "3", "5", "3", "2", "5"];
 
-function googleChallange(array) {
-  let numberArray = [];
-  let counter = 0;
-  let isSecondFound = true;
+// function googleChallange(array) {
+//   let numberArray = [];
+//   let counter = 0;
+//   let isSecondFound = true;
 
-  while (isSecondFound) {
-    if (counter === array.lenght) {
-      return -1;
-    }
-    if (numberArray.includes(array[counter])) {
-      isSecondFound = false;
-      return a[counter];
-    } else {
-      numberArray.push(array[counter]);
-      counter++;
-    }
-  }
-}
+//   while (isSecondFound) {
+//     if (counter === array.lenght) {
+//       return -1;
+//     }
+//     if (numberArray.includes(array[counter])) {
+//       isSecondFound = false;
+//       return a[counter];
+//     } else {
+//       numberArray.push(array[counter]);
+//       counter++;
+//     }
+//   }
+// }
 
 googleChallange();
