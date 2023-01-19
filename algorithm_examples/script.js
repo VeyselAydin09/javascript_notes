@@ -145,39 +145,53 @@
 
 / --------------------------------question-8----------------------------/;
 //ogrencinin ogretmenin girdigi notlara bakabildigi kod sistemini yaziniz
-let isimler = "";
-while (true) {
-  let menu = prompt("1 - ogretmen menu\n2 - ogrenci menu\n 0 -exit ");
+// let isimler = "";
+// while (true) {
+//   let menu = prompt("1 - ogretmen menu\n2 - ogrenci menu\n 0 -exit ");
 
-  if (menu == "1") {
-    let sayacIsim = Number(prompt("kac ogrenci verisi gireceksiniz? :"));
-    for (let i = 1; i <= sayacIsim; i++) {
-      let sayacNot = Number(prompt(`${i}. ogrenci kac adet not gireceksiniz`));
-      let isim = prompt("ogrenci ismini giriniz :");
-      let toplam = 0;
-      let ort = 0;
-      for (let i = 1; i <= sayacNot; i++) {
-        let not = Number(prompt(`${isim} icin ${i}. notunu giriniz`));
-        toplam += not;
-      }
-      ort = toplam / sayacNot;
-      isimler += isim + ort + "   ";
-    }
-    console.log(isimler);
-  } else if (menu == "2") {
-    let isim = prompt("lutfen isminizi giriniz :");
-    if (isimler.search(isim) != -1) {
-      console.log(
-        isimler.slice(
-          isimler.search(isim),
-          isimler.search(isim) + isim.length + 6
-        )
-      );
-    } else {
-      console.log("yanlis isim girildi");
-    }
+//   if (menu == "1") {
+//     let sayacIsim = Number(prompt("kac ogrenci verisi gireceksiniz? :"));
+//     for (let i = 1; i <= sayacIsim; i++) {
+//       let sayacNot = Number(prompt(`${i}. ogrenci kac adet not gireceksiniz`));
+//       let isim = prompt("ogrenci ismini giriniz :");
+//       let toplam = 0;
+//       let ort = 0;
+//       for (let i = 1; i <= sayacNot; i++) {
+//         let not = Number(prompt(`${isim} icin ${i}. notunu giriniz`));
+//         toplam += not;
+//       }
+//       ort = toplam / sayacNot;
+//       isimler += isim + ort + "   ";
+//     }
+//     console.log(isimler);
+//   } else if (menu == "2") {
+//     let isim = prompt("lutfen isminizi giriniz :");
+//     if (isimler.search(isim) != -1) {
+//       console.log(
+//         isimler.slice(
+//           isimler.search(isim),
+//           isimler.search(isim) + isim.length + 6
+//         )
+//       );
+//     } else {
+//       console.log("yanlis isim girildi");
+//     }
+//   }
+// }
+/ --------------------------------question-9----------------------------/;
+
+//  check  palindrom
+
+function isPalindrom(string) {
+  console.log(string.split("").join());
+  console.log(string.split("").reverse().join());
+  if (string.split("").join() == string.split("").reverse().join()) {
+    return true;
+  } else {
+    return false;
   }
 }
-// --------------------------------question-9----------------------------/;
+
+console.log(isPalindrom("radar"));
 // --------------------------------question-10----------------------------/;
 // --------------------------------question-11----------------------------/;
