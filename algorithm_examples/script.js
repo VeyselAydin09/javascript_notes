@@ -193,5 +193,13 @@ function isPalindrom(string) {
 }
 
 console.log(isPalindrom("radar"));
+
+// --------soution2----------
+
+function isPalindrom(str) {
+  return str.split("").reverse().join("") === str;
+}
+
+console.log(isPalindrom("91019"));
 // --------------------------------question-10----------------------------/;
 // --------------------------------question-11----------------------------/;
