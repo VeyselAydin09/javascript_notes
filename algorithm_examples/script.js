@@ -209,4 +209,28 @@ whichCentury = (year) => {
   return Math.ceil(year / 100);
 };
 console.log(`${whichCentury(year)}. yuzyil`);
-// --------------------------------question-11----------------------------/;
+/ --------------------------------question-11----------------------------/;
+// verilen dizide art arda tekrar eden iki sayi duplicate
+// ikinci degeri en kucuk indexte bulunan ikiliyi dondur
+["2", 1, "3", "5", "3", "2", "5"];
+
+function googleChallange(array) {
+  let numberArray = [];
+  let counter = 0;
+  let isSecondFound = true;
+
+  while (isSecondFound) {
+    if (counter === array.lenght) {
+      return -1;
+    }
+    if (numberArray.includes(array[counter])) {
+      isSecondFound = false;
+      return a[counter];
+    } else {
+      numberArray.push(array[counter]);
+      counter++;
+    }
+  }
+}
+
+googleChallange();
