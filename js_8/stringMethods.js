@@ -102,11 +102,11 @@
 // console.log(str6.charAt(str6.length - 1)); //* 0 -26 => 27 eleman
 
 // //* ----------------------------------------------------------
-// //* includes() - case sentive
+// //* includes() - case sentiv
 // //* ----------------------------------------------------------
 // const word = "To be or not to be, that is the question";
 
-// console.log(word.includes("to be")); //? true
+// console.log(word.includes("t o be")); //? true
 // console.log(word.includes("That")); //? false
 // console.log(word.includes("")); //? true
 // console.log(word.includes("to be", 14)); //? false
