@@ -100,3 +100,102 @@ console.log(isimler); //* Çıktı ==> ['Murat', 'Captain', 'Price', 'Messi', 'R
 ////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
 ​
 
+//*** 6. join()
+//! join() metodu, bir dizinin (veya dizi benzeri bir nesnenin(object)) tüm öğelerini(elemanlarını) belirtilen düzende birleştirir.
+​
+//? ÖRNEK
+const adlar = ["Murat", "Captain", "Price"];
+​
+console.log(adlar.join('*')); //* Çıktı ==> Murat*Captain*Price
+​
+console.log(adlar.join('-')); //* Çıktı ==> Murat-Captain-Price
+​
+console.log(adlar.join()); //* Çıktı ==> Murat,Captain,Price
+​
+console.log(adlar.join(" ")); //* Çıktı ==> Murat Captain Price
+​
+console.log(adlar.join("")); //* Çıktı ==> MuratCaptainPrice
+​
+​
+​
+////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
+​
+​
+//*** 7. sort()
+//! sort() metodu, bir dizinin elemanlarını sıralar ve dizinin sıralanmış halini aynı diziye atar.
+​
+//? ÖRNEK
+const arr = [1, 2, 5, 7, 545, 14, 65, 32, 1000000];
+​
+arr.sort();
+console.log(arr); //* Çıktı ==> [1, 1000000, 14, 2, 32, 5, 545, 65, 7]
+​
+//! UYARI: sort() metodu içine herhangi bir fonksiyon almazsa UTF-16 kod birimine göre sıralama yapar. Yani 16 bitlik kod birimiyle.
+//! Sayılarda düzgün bir sıralama yapmak için şunu yapabiliriz.
+​
+//? ÖRNEK
+arr.sort((a, b) => a - b) //* Küçükten büyüğe sıraladık
+console.log(arr); //* Çıktı ==> [1, 2, 5, 7, 14, 32, 65, 545, 1000000]
+​
+arr.sort((a, b) => b - a) //* Büyükten küçüğe sıraladık
+console.log(arr); //* Çıktı ==> [1000000, 545, 65, 32, 14, 7, 5, 2, 1]
+​
+//?STRİNG İFADELER İÇİN ÖRNEK
+const kelimeler = ['elma', 'armut', 'portakal', 'muz'];
+​
+kelimeler.sort(); //* alfabetik olarak sıraladık
+console.log(kelimeler); //* Çıktı ==>  ['armut', 'elma', 'muz', 'portakal']
+​
+​
+​
+​
+////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
+​
+​
+//*** 8. slice()
+//! slice() metodu, dizinin bir bölümünü seçer ve yeni diziyi döndürür.(Bu dizi içerisinde başlangıç ve son arasında(!!!SON DAHİL DEĞİL!!!) tüm elemanları kopyalar.)
+​
+//? ÖRNEK
+const basketbolcular = ['Lebron', 'Kobe', 'T-mac', 'Jordan'];
+​
+console.log(basketbolcular.slice(2)); //* Çıktı ==> ['T-mac', 'Jordan']
+​
+​
+​
+​
+////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
+​
+​
+//*** 9. splice()
+//! splice() metodu diziye eleman eklemeyi ve eleman kaldırmayı sağlar.
+​
+const names = ['Murat', 'Captain', 'Price']
+​
+names.splice(1, 1, 'Alex') //* Index numarası 1 olan 1 elemanı değiştir.
+​
+console.log(names); //* Çıktı ==>  ['Murat', 'Alex', 'Price']
+​
+​
+​
+​
+////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
+​
+​
+​
+//*** 10. every()
+//! every() metodu dizideki bütün elemanlar girilen koşulu sağlıyorsa TRUE döndürür. Herhangi biri bu koşulu sağlamıyorsa FALSE döndürür.
+​
+//? ÖRNEK
+function kucukMu50(eleman, index, dizi) {
+    return eleman < 50;  //* Dizi elemanlarının 50'den küçük olup olmadığının kontrolünü yapıyoruz
+}
+​
+[20, 80, 94, 12, 50].every(kucukMu50);  //* Çıktı ==> false
+[49, 12, 45, 3, 26].every(kucukMu50); //* Çıktı ==> true
+​
+​
+​
+​
+////////////////////////////////////////////////////////////////////////////////////////////////////////TODO
+​
+​
