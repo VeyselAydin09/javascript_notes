@@ -157,14 +157,13 @@ console.log(sayilar1.lastIndexOf(4)); //? -1
 //! olarak) eger bu girilen sayi, dizi icerisinde bulunuyorsa indisi
 //! (string ve number olarak ayri) yazdirilmalidir. Eger bulunamadiysa
 //! Aranilan bulunamamistir yazidirilmalidir.
-// const a = [3, 4, 6, 5, 2, "yedi", "iki", "dort", 8, 7, "bes"];
-// let sayi = prompt("lutfen bir sayi giriniz.");
-// let tahmin = a.includes(sayi);
-// if (tahmin == true) {
-//   console.log(indexOf(sayi));
-// } else {
-//   console.log("aranilan bulunamamistir");
-// }
+const a = [3, 4, 6, 5, 2, "yedi", "iki", "dort", 8, 7, "bes"];
+let sayi = prompt("lutfen bir sayi giriniz.");
+if (a.includes(sayi) == true) {
+  console.log(a.findIndex(sayi));
+} else {
+  console.log("aranilan sayi bulunamamistir");
+}
 
 //!-----------------------------------------------------------
 
