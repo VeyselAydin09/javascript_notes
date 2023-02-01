@@ -87,6 +87,9 @@ console.log(products);
 //* ======================================================
 //*                CHAINING (PIPELINE)
 //* ======================================================
+// !  bu sekilde filter, map ve forEach i ard arda kullanabilmeye CHAINING denir zincirleme kullanim
+// filter((x) => x<0).map((t) => t * -1).forEach((y) => console.log(y));
+// ?  NOT: ama forEach return etmedigi icin onun ardindan bi daha map veya filter yapamayiz
 
 //* ======================================================
 //*                 FILTER METHOD
