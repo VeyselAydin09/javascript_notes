@@ -5,15 +5,14 @@
 }
 
 body {
-  font-family: cursive;
-  color: black;
-  border: 2px solid black;
-  background-color: bisque;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  background-color: #2d3436;
 }
 
 .secret-number {
   font-size: 2rem;
-  border: 2px solid black;
+  border: 4px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
