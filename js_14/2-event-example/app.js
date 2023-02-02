@@ -39,9 +39,9 @@ langInput.addEventListener("keydown", (event) => {
     addBtn.click();
   }
 
-  // if (event.code === "Delete") {
-  //   deleteBtn.click();
-  // }
+  if (event.code === "Delete") {
+    deleteBtn.click();
+  }
 
   if (event.keyCode === 46) {
     deleteBtn.click();
