@@ -3,7 +3,7 @@
 //*=========================================================
 
 const fetchCountryByName = (name) => {
-  const url = `https://restcountries.com/v3.1/name/${name}`;
+  const url = `https://restcountries.com/v3.1/all`;
   fetch(url)
     .then((res) => {
       if (!res.ok) {
