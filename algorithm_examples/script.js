@@ -209,7 +209,7 @@
 //   return Math.ceil(year / 100);
 // };
 // console.log(`${whichCentury(year)}. yuzyil`);
-/ --------------------------------question-11----------------------------/;
+/ --------------------------------question-10----------------------------/;
 // verilen dizide art arda tekrar eden iki sayi duplicate
 // ikinci degeri en kucuk indexte bulunan ikiliyi dondur
 // ["2", 1, "3", "5", "3", "2", "5"];
@@ -234,7 +234,7 @@
 // }
 
 // googleChallange();
-/ --------------------------------question-12----------------------------/;
+/ --------------------------------question-11----------------------------/;
 // Günlük 210 ton yağ rafine etme ve işleme kapasitesine sahip bir fabrikanın 7550 tonluk üretimi karşılamak için kaç gün çalışması gerektiğini ve çalışma sonucu kaç ton zeytinyağı üretileceğini hesaplayan Javascript kodunu yazınız.
 
 g = 0;
