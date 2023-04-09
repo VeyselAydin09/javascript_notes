@@ -237,18 +237,23 @@
 / --------------------------------question-11----------------------------/;
 // Günlük 210 ton yağ rafine etme ve işleme kapasitesine sahip bir fabrikanın 7550 tonluk üretimi karşılamak için kaç gün çalışması gerektiğini ve çalışma sonucu kaç ton zeytinyağı üretileceğini hesaplayan Javascript kodunu yazınız.
 
-g = 0;
-u = 0;
-while (u <= 7550) {
-  u = u + 210;
-  g = g + 1;
-}
-alert(u);
-alert(g);
+// g = 0;
+// u = 0;
+// while (u <= 7550) {
+//   u = u + 210;
+//   g = g + 1;
+// }
+// alert(u);
+// alert(g);
 
 / --------------------------------question-12----------------------------/;
 // Günlük 1150 şişe süt üreten bir tesisin 24 günlük kümülatif süt üretimini alt alta ekrana yazdıran Javascript kodunu yazınız.
 
+// ts = 0;
+// for (s = 1; s <= 24; s = s + 1) {
+//   ts = ts + 1150;
+//   document.write(ts + "<br>");
+// }
 / --------------------------------question-14----------------------------/;
 / --------------------------------question-15----------------------------/;
 / --------------------------------question-16----------------------------/;
