@@ -234,3 +234,19 @@
 // }
 
 // googleChallange();
+/ --------------------------------question-12----------------------------/;
+// Günlük 210 ton yağ rafine etme ve işleme kapasitesine sahip bir fabrikanın 7550 tonluk üretimi karşılamak için kaç gün çalışması gerektiğini ve çalışma sonucu kaç ton zeytinyağı üretileceğini hesaplayan Javascript kodunu yazınız.
+
+g = 0;
+u = 0;
+while (u <= 7550) {
+  u = u + 210;
+  g = g + 1;
+}
+alert(u);
+alert(g);
+
+/ --------------------------------question-13----------------------------/;
+/ --------------------------------question-14----------------------------/;
+/ --------------------------------question-15----------------------------/;
+/ --------------------------------question-16----------------------------/;
